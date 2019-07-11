@@ -1,0 +1,19 @@
+{
+  "name": "botworx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "llaves.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelrazo25/botworx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelrazo25/botworx/issues"
+  },
+  "homepage": "https://github.com/miguelrazo25/botworx#readme"
+}
