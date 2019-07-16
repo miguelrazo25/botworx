@@ -1,11 +1,13 @@
-var llaves = require(".llaves.js");
+var llaves = require('./llaves.js');
 
 var Twitter = require("twitter");
 
-var obtenerTweets = function() {
-  var cliente = new Twitter(keys.twitterLlaves);
+var spotify = require('spotify');
 
-  var params = { screen_name: "botworx" };
+var obtenerTweets = function() {
+  var cliente = new Twitter(llaves.twitterKeys);
+
+  var params = { screen_name: "Murderman Killbot" };
   cliente.get("statuses/user_timeline", params, function(error, tweets, response) {
     if (!error) {
       console.log(tweets);
@@ -19,7 +21,15 @@ var obtenerTweets = function() {
   });
 }
 
-var escoje = fuction(caseData, functionData) {
+spotify.search({ type: 'track', query: 'dancing in the moonlight' }, function(err, data) {
+  if ( err ) {
+      console.log('Error occurred: ' + err);
+      return;
+  }
+  console.log(data);
+});
+
+var escoje = function(caseData, functionData) {
     switch(caseData) {
         case 'mis-tweets' :
             obtenerTweets();
